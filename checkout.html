@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout | SOHE Care</title>
+    <meta
+      name="description"
+      content="Checkout page for SOHE luxury toothpaste priced at ₹1,150."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="checkout">
+    <div class="announcement-bar">
+      <span>Secure order request flow</span>
+      <span>SOHE Luxury Oral Care</span>
+      <span>Signature Tube ₹1,150</span>
+    </div>
+
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="index.html" aria-label="SOHE Care home">
+          <span class="brand-mark">SOHE</span>
+          <span class="brand-swoosh" aria-hidden="true"></span>
+        </a>
+        <nav class="main-nav" aria-label="Primary">
+          <a href="shop.html">Shop</a>
+          <a href="science.html">Science</a>
+          <a href="ingredients.html">Ingredients</a>
+          <a href="faq.html">FAQ</a>
+        </nav>
+        <div class="header-actions">
+          <a class="button button-small" href="shop.html">Back to Shop</a>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </header>
+
+      <nav class="mobile-nav" id="mobile-menu" aria-label="Mobile">
+        <a href="shop.html">Shop</a>
+        <a href="science.html">Science</a>
+        <a href="ingredients.html">Ingredients</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+
+      <main>
+        <section class="section checkout-layout">
+          <div class="checkout-copy">
+            <p class="eyebrow">Checkout</p>
+            <h1>Complete your SOHE purchase</h1>
+            <p class="hero-subcopy">
+              This static checkout captures a clean premium flow and can later be connected to
+              Razorpay, Shopify, or WooCommerce. For now it provides a working order-request step.
+            </p>
+
+            <form class="checkout-form">
+              <label>
+                Full Name
+                <input type="text" placeholder="Your name" />
+              </label>
+              <label>
+                Email
+                <input type="email" placeholder="you@example.com" />
+              </label>
+              <label>
+                Phone
+                <input type="tel" placeholder="+91 98xxxxxx" />
+              </label>
+              <label>
+                Address
+                <textarea rows="4" placeholder="Shipping address"></textarea>
+              </label>
+            </form>
+          </div>
+
+          <aside class="checkout-card" data-price="1150">
+            <span class="eyebrow">Order Summary</span>
+            <h2>SOHE Luxury Toothpaste</h2>
+            <p class="product-subline">100g | Nano-Hydroxyapatite Dentifrice</p>
+
+            <div class="checkout-line">
+              <span>Unit price</span>
+              <strong>₹1,150</strong>
+            </div>
+
+            <div class="quantity-selector" data-checkout-qty>
+              <span class="quantity-label">Quantity</span>
+              <div class="quantity-controls">
+                <button type="button" class="qty-btn" data-action="decrease">−</button>
+                <span class="qty-value" data-qty-value>1</span>
+                <button type="button" class="qty-btn" data-action="increase">+</button>
+              </div>
+            </div>
+
+            <div class="checkout-line checkout-total-line">
+              <span>Total</span>
+              <strong data-total-display>₹1,150</strong>
+            </div>
+
+            <a class="button" href="mailto:hello@sohecare.com?subject=SOHE%20Order%20Request&body=I%20would%20like%20to%20order%20SOHE%20Luxury%20Toothpaste." data-order-email>
+              Place Order Request
+            </a>
+            <a class="button button-secondary" href="shop.html">Continue Shopping</a>
+          </aside>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
